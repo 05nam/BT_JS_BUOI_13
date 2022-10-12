@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai tap buoi 13</title>
+    <!-- CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--! BT 1  -->
+    <div class="container border border-primary py-5 bg-secondary">
+      <h1 class="text-center">BAI 01</h1>
+      <p>tính lương</p>
+      <form class="py-5">
+        <div class="form-group">
+          <label for="exampleInputEmail1"> Số ngày đi làm </label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Nhập Số ngày đi làm"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Lương 1 ngày</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Nhập Lương 1 ngày"
+          />
+        </div>
+
+        <button type="button" id="btn_N" class="btn btn-primary">
+          Tính lương
+        </button>
+        <p id="txtNotify" class="alert alert-danger"></p>
+      </form>
+    </div>
+    <!-- !BT 2  -->
+    <div class="container border border-primary py-5 px-5 bg-secondary">
+      <h1 class="text-center">BAI 02</h1>
+      <p>tính trung bình 5 số</p>
+      <form class="py-5">
+        <div class="form-group">
+          <label for="exampleInputEmail1"> Số thứ 01 </label>
+          <input
+            type="number"
+            class="form-control"
+            id="num__1"
+            aria-describedby="emailHelp"
+            placeholder="Nhập Số thứ 01"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Số thứ 02</label>
+          <input
+            type="number"
+            class="form-control"
+            id="num__2"
+            placeholder="Nhập Số thứ 02"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Số thứ 03</label>
+          <input
+            type="number"
+            class="form-control"
+            id="num__3"
+            placeholder="Nhập Số thứ 03"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Số thứ 04</label>
+          <input
+            type="number"
+            class="form-control"
+            id="num__4"
+            placeholder="Nhập Số thứ 04"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Số thứ 05</label>
+          <input
+            type="number"
+            class="form-control"
+            id="num__5"
+            placeholder="Nhập Số thứ 05"
+          />
+        </div>
+
+        <button type="button" id="btn_bt2" class="btn btn-primary">
+          Tính trung bình
+        </button>
+        <p id="txtNotify__bt2" class="text-danger alert alert-danger"></p>
+      </form>
+    </div>
+    <!-- !BT 3 -->
+    <div class="container border border-primary py-5 bg-secondary">
+      <h1 class="text-center">BAI 03</h1>
+      <p>đổi USD</p>
+      <form class="py-5">
+        <div class="form-group">
+          <label for="exampleInputEmail1"> USD </label>
+          <input
+            type="number"
+            class="form-control"
+            id="USD"
+            aria-describedby="emailHelp"
+            placeholder="Nhập USD"
+          />
+        </div>
+
+        <button type="button" id="btn_bt3" class="btn btn-primary">
+          Đổi thành VND
+        </button>
+        <p id="txtNotify__bt3" class="alert alert-danger"></p>
+      </form>
+    </div>
+    <!-- !BT 4  -->
+    <div class="container border border-primary py-5 bg-secondary">
+      <h1 class="text-center">BAI 04</h1>
+      <p>tính chu vi + diện tích hình chữ nhật</p>
+      <form class="py-5">
+        <div class="form-group">
+          <label for="exampleInputEmail1"> chiều dài </label>
+          <input
+            type="number"
+            class="form-control"
+            id="wid"
+            aria-describedby="emailHelp"
+            placeholder="Nhập chiều dài"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1"> chiều rộng </label>
+          <input
+            type="number"
+            class="form-control"
+            id="heig"
+            aria-describedby="emailHelp"
+            placeholder="Nhập chiều rộng"
+          />
+        </div>
+
+        <button type="button" id="btn_bt4" class="btn btn-primary">Tính</button>
+        <p id="txtNotify__bt4s" class="alert alert-danger"></p>
+        <p id="txtNotify__bt4p" class="alert alert-danger"></p>
+      </form>
+    </div>
+    <!-- ! BT 5 -->
+    <div class="container border border-primary py-5 bg-secondary">
+      <h1 class="text-center">BAI 05</h1>
+      <p>Tính tổng 2 kỳ số</p>
+      <form class="py-5">
+        <div class="form-group">
+          <label for="exampleInputEmail1"> Số Có 2 Chữ Số </label>
+          <input
+            type="number"
+            class="form-control"
+            id="num__6"
+            aria-describedby="emailHelp"
+            placeholder="Nhập Số Có 2 Chữ Số: 15, 25..."
+          />
+        </div>
+
+        <button type="button" id="btn_bt5" class="btn btn-primary">
+          Tính Tổng
+        </button>
+        <p id="txtNotify__bt5" class="alert alert-danger"></p>
+      </form>
+    </div>
+
+    <script src="./Js/bai_01.js"></script>
+    <script src="./Js/bai_02.js"></script>
+    <script src="./Js/bai_03.js"></script>
+    <script src="./Js/bai_04.js"></script>
+    <script src="./Js/bai_05.js"></script>
+    <!-- BS  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
